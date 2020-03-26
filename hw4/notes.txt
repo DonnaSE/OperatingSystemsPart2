@@ -1,0 +1,15 @@
+
+
+
+ls -lat
+man make
+mkdir src
+mv malloc.c src/
+
+make clean
+make
+
+env LD_PRELOAD=lib/libmalloc-ff.so tests/test1
+
+
+
